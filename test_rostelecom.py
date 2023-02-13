@@ -72,8 +72,8 @@ def test_wrong(web_browser):
     auth_page.phone.send_keys('yerafop764@otanhome.com')
     auth_page.password.send_keys('password')
     auth_page.btn_login.click()
-    #assert auth_page.invalid_attention.get_text() == 'Неверный логин или пароль'
-    assert auth_page.invalid_attention.get_text() == 'Неверно введен текст с картинки'
+    assert auth_page.invalid_attention.get_text() == 'Неверный логин или пароль'
+    #assert auth_page.invalid_attention.get_text() == 'Неверно введен текст с картинки'
 
 
 #Тест 8
